@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zn">
+<%- include('./public/head.ejs')%>
+<body>
+<%- include('./public/header.ejs')%>
+	<section class="main floatfix">
+		<%- include('./public/aside.ejs')%>
+	<section class="main-articles articles">
+		<section class="main-articles-title">
+			<h2>
+				<a href="">
+					<%= article.articleTitle %>
+				</a>
+			</h2>
+			<p>
+			<span>
+				作者：<%= article.articleAuthor %>
+			</span>
+			<span>
+				发布时间：<%= article.articleTime %>
+			</span>
+			<span>
+				浏览量：<%= article.articleClick %>
+			</span>
+		</p>
+		<section class="main-article-content">
+			<p><%= article.articleContent %></p>
+		</section>
+		</section>				
+		</section>
+	</section>
+<%- include('./public/footer.ejs')%>
+</body>
+</html>
